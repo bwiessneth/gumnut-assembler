@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'gumnut-assembler'
-copyright = '2020, Benjamin Wießneth'
+copyright = '2022, Benjamin Wießneth'
 author = 'Benjamin Wießneth'
 
 # The full version, including alpha/beta/rc tags
