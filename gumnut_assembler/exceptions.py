@@ -26,15 +26,6 @@ class Error(Exception):
         return dict({"type": self.type, "expression": self.expression, "message": self.message})
 
 
-class InvalidPCValue(Error):
-
-    """
-    Get's raised when the programm counter (PC) has an invalid value.
-    This is the case for any value less than ``0`` and greater than
-    ``4095``.
-    """
-
-
 class InstructionMemorySizeExceeded(Error):
 
     """
@@ -51,14 +42,8 @@ class DataMemorySizeExceeded(Error):
     """
 
 
-class DataMemoryAccessViolation(Error):
 
     """
-    Get's raised when trying to access data from the data memory which
-    isn't accessible.
-    """
-
-
 class InvalidInstruction(Error):
 
     """
@@ -66,17 +51,4 @@ class InvalidInstruction(Error):
     """
 
 
-class EmptyReturnStack(Error):
-
-    """
-    Get's raised when trying to return from a subroutine although the
-    return address stack is empty.
-    """
-
-
-class ReturnAddressStackOverflow(Error):
-
-    """
-    Get's raised when trying jump into a subroutine although the
-    return address stack is already full.
     """
