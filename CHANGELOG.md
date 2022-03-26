@@ -28,3 +28,66 @@
 * Fix configuration for latest sphinx-rtd-theme version ([af07eec](https://www.github.com/bwiessneth/gumnut-assembler/commit/af07eecbbd5bc3b68dfa9252e5fa2ab3f274724a))
 * Update version ([be25a65](https://www.github.com/bwiessneth/gumnut-assembler/commit/be25a65697393b671f8525e0b6adc039a3d5560c))
 * Update year ([61ca55d](https://www.github.com/bwiessneth/gumnut-assembler/commit/61ca55df871e16926b50265e29aa518b38b09531))
+
+
+## 3.0.0
+
+
+### ⚠ BREAKING CHANGES
+
+* Changed CLI entry point name from ``gumnut_assembler`` to ``gumnut-assembler``
+
+
+## 2.0.0
+
+
+### ⚠ BREAKING CHANGES
+
+* Enforced proper module names and naming convention
+
+
+## 1.0.3
+
+
+### Bug Fixes
+
+* Typos in README
+* Making sure ``tox`` is using the package, not the source files for testing
+* Updated development docs
+
+
+## 1.0.2
+
+### Miscellaneous Chores
+
+* The README file is now also using reStructuredText format
+
+
+### Bug Fixes
+
+* ``equ`` directive is now working for ascii values (e.g. ``char_a: equ 'a'``)
+
+
+## 1.0.1
+
+### Miscellaneous Chores
+
+* Proper CLI for standalone usage
+* Documentation (still in progress, though)
+* Introduced ``tox`` for handling testing, build, and publishing tasks
+* Introduced Github Actions for automated testing
+
+### Code Refactoring
+
+* Replaced ``nosetest`` with ``pytest`` as the choice for unit and integration testing
+* Updated the existing tests for ``pytest``
+
+
+### Bug Fixes
+
+* Module imports were fixed
+
+
+## 1.0.0
+
+The initial version which was *gumnut-assembler* was forked from.
