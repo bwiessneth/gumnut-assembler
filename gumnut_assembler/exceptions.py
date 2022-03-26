@@ -4,9 +4,7 @@ class Error(Exception):
     Base class for all exceptions.
 
     This is the base class for all exceptions raised within the
-    GumnutSimulator context. To provide sufficient user feedback the
-    cause expression of the exception and a somewhat helpfull message
-    is passed to the constructor.
+    Gumnut-Assembler context.
 
     :param expression: A string containing the expression which caused
                        the exception to be raised.
