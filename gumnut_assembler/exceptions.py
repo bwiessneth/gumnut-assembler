@@ -22,7 +22,7 @@ class Error(Exception):
         self.message = message
 
     def __repr__(self):
-        return str("Error <", self.type, ", ", self.message, ", ", self.expression, ">")
+        return str("Error <{self.type}, {self.message}, {self.expression}>")
 
     def as_dict(self):
         return dict({"type": self.type, "expression": self.expression, "message": self.message})
