@@ -22,7 +22,7 @@ copyright = '2020, Benjamin Wießneth'
 author = 'Benjamin Wießneth'
 
 # The full version, including alpha/beta/rc tags
-release = version = '3.0.0'
+release = version = '4.0.0'
 
 
 # -- General configuration ---------------------------------------------------
