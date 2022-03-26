@@ -42,13 +42,8 @@ class DataMemorySizeExceeded(Error):
     """
 
 
+class UnknownInstruction(Error):
 
     """
-class InvalidInstruction(Error):
-
-    """
-    Get's raised when an unknown or invalid instruction is encountered.
-    """
-
-
+    Get's raised when an unknown instruction is encountered.
     """
