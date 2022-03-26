@@ -1,5 +1,3 @@
-__version__ = "3.0.0"
-
 import json
 import logging
 import os
