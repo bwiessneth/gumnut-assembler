@@ -17,12 +17,12 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'gumnut-assembler'
-copyright = '2022, Benjamin Wießneth'
-author = 'Benjamin Wießneth'
+project = "gumnut-assembler"
+copyright = "2022, Benjamin Wießneth"
+author = "Benjamin Wießneth"
 
 # The full version, including alpha/beta/rc tags
-release = version = '4.0.0'
+release = version = "4.0.0"
 
 
 # -- General configuration ---------------------------------------------------
@@ -31,54 +31,48 @@ release = version = '4.0.0'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.extlinks',
-    'autoapi.extension',
+    "sphinx.ext.extlinks",
+    "autoapi.extension",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+templates_path = ["_templates"]
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
-source_suffix = '.rst'
+source_suffix = ".rst"
 
 # The master toctree document.
-master_doc = 'index'
+master_doc = "index"
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'sphinx'
-
+pygments_style = "sphinx"
 
 
 # -- Options for HTML output -------------------------------------------------
 
 import sphinx_rtd_theme
 
-html_theme = 'sphinx_rtd_theme'
-html_theme_options = {
-    'display_version': False,
-    'navigation_depth': 2,
-    'collapse_navigation': True
-}
+html_theme = "sphinx_rtd_theme"
+html_theme_options = {"display_version": False, "navigation_depth": 2, "collapse_navigation": True}
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
-html_last_updated_fmt = '%b %d, %Y'
+html_last_updated_fmt = "%b %d, %Y"
 html_context = {
-    'display_github': True,
-    'github_user': 'bwiessneth',
-    'github_repo': 'gumnut-assembler',
-    'github_version': 'master',
-    'conf_py_path': '/docs/'
+    "display_github": True,
+    "github_user": "bwiessneth",
+    "github_repo": "gumnut-assembler",
+    "github_version": "master",
+    "conf_py_path": "/docs/",
 }
 html_css_files = []
 html_show_copyright = False
 
 
-
 # -- Options for autoapi -----------------------------------------------------
 
-autoapi_dirs = ['../gumnut_assembler']
+autoapi_dirs = ["../gumnut_assembler"]
