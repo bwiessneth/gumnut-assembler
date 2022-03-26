@@ -7,7 +7,7 @@ import re
 from collections import OrderedDict
 
 from gumnut_assembler import __version__
-from gumnut_assembler.exceptions import InvalidInstruction, InstructionMemorySizeExceeded
+from gumnut_assembler.exceptions import InstructionMemorySizeExceeded, UnknownInstruction
 
 logger = logging.getLogger("root")
 
@@ -806,7 +806,7 @@ class GumnutAssembler:
             if any(x.instruction == asm_line.instruction for x in self.instruction_set_requirements):
                 return True
 
-            raise InvalidInstruction(asm_line.__str__(), "Unknown instruction")
+            raise UnknownInstruction(asm_line.__str__(), "Unknown instruction")
         else:
             return True
 
